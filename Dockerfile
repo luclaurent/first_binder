@@ -19,9 +19,13 @@ ADD https://github.com/hoareauc/first_binder/blob/master/fig_spring_mass_damper_
 
 ADD https://github.com/hoareauc/first_binder/blob/master/fig_spring_mass_damper_displacement_velocity.svg /home/jovyan/work
 
+RUN mkdir .ipynb_checkpoints
+
+ADD https://github.com/hoareauc/first_binder/blob/56368102a086d23fe40e13210dd0efdd07f999dc/.ipynb_checkpoints/mainAlphaGen-checkpoint.ipynb /home/jovyan/work/.ipynb_checkpoints
+
 RUN mkdir -p /home/jovyan/work && \
  chown jovyan:users -R /home/jovyan/work/
- 
+
 # set the user back to original setting
 USER $NB_UID
 
