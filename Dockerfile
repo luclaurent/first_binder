@@ -19,7 +19,7 @@ RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/mainAlph
 
 RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/fig_spring_mass_damper_displacement.svg
 
-RUN https://raw.githubusercontent.com/hoareauc/first_binder/master/fig_spring_mass_damper_displacement_velocity.svg
+RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/fig_spring_mass_damper_displacement_velocity.svg
 
 RUN cd /home/jovyan/
 
