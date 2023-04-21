@@ -9,7 +9,7 @@ USER root
 RUN apt-get update
 
 # set the user back to original setting
-#USER $NB_UID
+USER $NB_UID
 
-#run jupyter
+# run jupyter
 EXPOSE 8888
