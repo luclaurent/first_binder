@@ -15,6 +15,7 @@ RUN mkdir .ipynb_checkpoints
 
 RUN wget https://github.com/hoareauc/first_binder/blob/master/mainAlphaGen.ipynb
 RUN cp mainAlphaGen.ipynb /home/jovyan/work
+RUN rm mainAlphaGen.ipynb
 
 RUN mkdir -p /home/jovyan/work && \
  chown jovyan:users -R /home/jovyan/work/
