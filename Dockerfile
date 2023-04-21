@@ -9,7 +9,10 @@ USER root
 RUN apt-get update
 
 # Supress the work directory
-RUN mkdir /home/jovyan/shared
+# RUN mkdir /home/jovyan/shared
+
+# Add file from git hub
+ADD https://github.com/hoareauc/first_binder/blob/903311efe9ef760b32518de590bd63040a61270b/mainAlphaGen.ipynb /home/jovyan/work
 
 # set the user back to original setting
 USER $NB_UID
