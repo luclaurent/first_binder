@@ -14,5 +14,3 @@
 docker run --name myAlphaGen -w /home/jovyan --user root -e GRANT_SUDO=yes -p 8888:8888 -d -v %cd%:/home/jovyan/work alpha_gen
 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hoareauc/first_binder.git/HEAD)
-
