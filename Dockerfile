@@ -9,9 +9,8 @@ USER root
 #RUN apt-get update
 
 # update linux stuffs
-#RUN apt-get -y autoremove
+RUN apt-get -y autoremove
 
-RUN chown jovyan:users -R /home/jovyan/work/
 
 # Add file from git hub
 ADD https://github.com/hoareauc/first_binder/blob/903311efe9ef760b32518de590bd63040a61270b/mainAlphaGen.ipynb /home/jovyan/work
@@ -22,6 +21,8 @@ ADD https://github.com/hoareauc/first_binder/blob/master/fig_spring_mass_damper_
 
 # set the user back to original setting
 USER $NB_UID
+
+RUN chown jovyan:users -R /home/jovyan/work/
 
 # run jupyter
 EXPOSE 8888
