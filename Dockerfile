@@ -13,9 +13,15 @@ RUN apt-get -y autoremove
 
 RUN mkdir .ipynb_checkpoints
 
+RUN cd /home/jovyan/work
+
 RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/mainAlphaGen.ipynb
-RUN cp mainAlphaGen.ipynb /home/jovyan/work
-#RUN rm mainAlphaGen.ipynb
+
+RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/fig_spring_mass_damper_displacement.svg
+
+RUN https://raw.githubusercontent.com/hoareauc/first_binder/master/fig_spring_mass_damper_displacement_velocity.svg
+
+RUN cd /home/jovyan/
 
 RUN mkdir -p /home/jovyan/work && \
  chown jovyan:users -R /home/jovyan/work/
