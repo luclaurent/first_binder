@@ -11,6 +11,8 @@ USER root
 # update linux stuffs
 #RUN apt-get -y autoremove
 
+RUN chown jovyan:users -R /home/jovyan/work/
+
 # Add file from git hub
 ADD https://github.com/hoareauc/first_binder/blob/903311efe9ef760b32518de590bd63040a61270b/mainAlphaGen.ipynb /home/jovyan/work
 
