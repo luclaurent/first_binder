@@ -21,7 +21,5 @@ ADD https://github.com/hoareauc/first_binder/blob/master/fig_spring_mass_damper_
 # set the user back to original setting
 USER $NB_UID
 
-GRANT_SUDO=yes
-
 # run jupyter
 EXPOSE 8888
