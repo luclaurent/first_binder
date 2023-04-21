@@ -18,9 +18,8 @@ ADD https://github.com/hoareauc/first_binder/blob/master/fig_spring_mass_damper_
 
 ADD https://github.com/hoareauc/first_binder/blob/master/fig_spring_mass_damper_displacement_velocity.svg /home/jovyan/work
 
-
 # set the user back to original setting
-USER $NB_UID
+# USER $NB_UID
 
 # run jupyter
 EXPOSE 8888
