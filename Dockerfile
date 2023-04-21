@@ -8,6 +8,9 @@ USER root
 # update linuw stuffs
 RUN apt-get update
 
+# Supress the work directory
+RUN mkdir /home/jovyan/shared
+
 # set the user back to original setting
 USER $NB_UID
 

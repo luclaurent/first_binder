@@ -13,3 +13,5 @@
 
 
 docker build -t alpha_gen .
+
+https://hub.gke2.mybinder.org/user/hoareauc-first_binder-5jy4ofn4/lab
