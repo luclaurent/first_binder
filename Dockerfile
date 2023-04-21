@@ -26,7 +26,7 @@ RUN cp fig_spring_mass_damper_displacement_velocity.svg /home/jovyan/work/
 
 RUN rm mainAlphaGen.ipynb
 RUN rm fig_spring_mass_damper_displacement.svg
-RUN rm mainAlphaGen.ipynb fig_spring_mass_damper_displacement_velocity.svg
+RUN rm fig_spring_mass_damper_displacement_velocity.svg
 
 RUN mkdir -p /home/jovyan/work && \
  chown jovyan:users -R /home/jovyan/work/
