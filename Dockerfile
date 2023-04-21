@@ -19,8 +19,9 @@ ADD https://github.com/hoareauc/first_binder/blob/master/fig_spring_mass_damper_
 
 ADD https://github.com/hoareauc/first_binder/blob/master/fig_spring_mass_damper_displacement_velocity.svg /home/jovyan/work
 
-RUN chown jovyan:users -R /home/jovyan/work/
-
+RUN mkdir -p /home/jovyan/work && \
+ chown jovyan:users -R /home/jovyan/work/
+ 
 # set the user back to original setting
 USER $NB_UID
 
