@@ -14,17 +14,17 @@ RUN apt-get -y autoremove
 RUN mkdir .ipynb_checkpoints
 
 
-RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/mainAlphaGen.ipynb
+RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/mainAlphaGen2.ipynb
 
 RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/fig_spring_mass_damper_displacement.svg
 
 RUN wget https://raw.githubusercontent.com/hoareauc/first_binder/master/fig_spring_mass_damper_displacement_velocity.svg
 
-RUN cp mainAlphaGen.ipynb /home/jovyan/work/
+RUN cp mainAlphaGen2.ipynb /home/jovyan/work/
 RUN cp fig_spring_mass_damper_displacement.svg /home/jovyan/work/
 RUN cp fig_spring_mass_damper_displacement_velocity.svg /home/jovyan/work/
 
-RUN rm mainAlphaGen.ipynb
+RUN rm mainAlphaGen2.ipynb
 RUN rm fig_spring_mass_damper_displacement.svg
 RUN rm fig_spring_mass_damper_displacement_velocity.svg
 
